@@ -12,7 +12,7 @@
         '<(DEPTH)/third_party/expat/expat.gyp:expat'
       ],
       'copies': [
-        { 'destination': '<(PRODUCT_DIR)/lua/lxp',
+        { 'destination': '<(PRODUCT_DIR)/lxp',
           'files': [
             'src/lxp/lom.lua'
         ]},
