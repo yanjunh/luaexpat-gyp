@@ -21,6 +21,13 @@
           'product_prefix': '',
           'cflags!': ['-fvisibility=hidden'],
         }],
+        ['OS == "mac"', {
+          'product_prefix': '',
+          'product_extension': 'so',
+          'xcode_settings': {
+            'GCC_SYMBOLS_PRIVATE_EXTERN': 'NO',
+          }
+        }],
       ],
       'copies': [
         { 'destination': '<(PRODUCT_DIR)/lxp',
